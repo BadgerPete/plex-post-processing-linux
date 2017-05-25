@@ -6,8 +6,5 @@ is a cooresponding '.edl' file.  If there is not an edl
 file in place it will run Comskip against the .ts file
 and create the .edl.
 
-TODO:
-Once edl is in place cut commercials out so plex will
-be commercial free.  For now, plex records and does the
-post-processing but Kodi is required for cutting out
-the commercials.
+Uses comcut to remove the commercials and reencode as a
+mp4 but keeps the edl file for Kodi.
