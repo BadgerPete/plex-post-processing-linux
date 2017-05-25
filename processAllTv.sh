@@ -36,6 +36,7 @@ for f in $(find /TvShows -name '*.ts' -o -name '*.mkv'); do
     sleep 5
     # Re-encode as an mp4 file so we keep the original
     /usr/bin/ffmpeg -i "/tmp/${filename}.${extension}" -acodec copy -vcodec copy "${directory}/${filename}.mp4" >> $logfile 2>&1
+    /bin/rm /tmp/$filename.$extension
   fi
 done
 
